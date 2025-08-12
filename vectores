@@ -1,0 +1,99 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNgbW6BPaDl1IpSnThwRs/L",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/majitohenaom/arreglos_con_python_numpy/blob/main/vectores\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "vector = np.array ([1, 2, 3, 4, 5])\n",
+        "print(vector)\n",
+        "print(vector[2])\n",
+        "\n",
+        "\n",
+        "vector1= np.zeros (5)\n",
+        "print(\"vector de zeros: \", vector1)\n",
+        "vector2= np.ones (5)\n",
+        "print(\"vector de unos: \", vector2)\n",
+        "vector3= np.arange (1,10)\n",
+        "print(\"vector de rango: \", vector3)\n",
+        "vector4= np.linspace(1,10,5)\n",
+        "print(\"Vector de  rango con 5 elementos: \", vector4)\n",
+        "vector5= np.random.rand(10)\n",
+        "print(\"vector de numeros aleatorios: \",vector5)\n",
+        "vector6= np.random.randint(1,10,10)\n",
+        "print(\"Vector de numero aleatorios entre 1 y 10: \", vector6)\n"
+      ],
+      "metadata": {
+        "id": "5cu07STWWXDz"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "vector1 = np.array ([1, 2, 3])\n",
+        "vector2 = np.array ([4, 5, 6])\n",
+        "suma = vector1 + vector2\n",
+        "print(\"suma de vectores: \", suma)\n",
+        "producto = vector1 * vector2\n",
+        "print(\"Producto de vectores: \", producto)\n",
+        "division = vector1 / vector2\n",
+        "print(\"División de vectores: \", division)\n",
+        "resta = vector1- vector2\n",
+        "print(\"Resta de vectores: \", resta)\n",
+        "potencia = vector1 ** 2\n",
+        "print(\"Potencia de vectores: \", potencia )\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "qoeRtW-Jq0dM",
+        "outputId": "583dbc1f-e679-4c5e-9d5e-475c63e5bced"
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "suma de vectores:  [5 7 9]\n",
+            "Producto de vectores:  [ 4 10 18]\n",
+            "División de vectores:  [0.25 0.4  0.5 ]\n",
+            "Resta de vectores:  [-3 -3 -3]\n",
+            "Potencia de vectores:  [1 4 9]\n",
+            "\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
